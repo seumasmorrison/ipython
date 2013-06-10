@@ -241,7 +241,7 @@ class ProfileDir(LoggingConfigurable):
         ----------
         profile_dir : unicode or str
             The path of the profile directory.  This is expanded using
-            :func:`IPython.utils.genutils.expand_path`.
+            :func:`IPython.utils.path.expand_path`.
         """
         profile_dir = expand_path(profile_dir)
         if not os.path.isdir(profile_dir):
